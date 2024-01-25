@@ -80,6 +80,7 @@
                 </div>
             </div>
 
+            <!-- I can do all things through Him who strengthens me -->
 
             <div class="w-full h-full flex flex-col gap-4 font-semibold tracking-wider xl:min-h-[482px] justify-center items-center">
                 <div class="bg-white bg-opacity-5 rounded-2xl w-full h-full p-6 px-10">
