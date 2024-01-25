@@ -38,7 +38,7 @@
     <div class="text-white dark:bg-white bg-opacity-10 dark:bg-opacity-10 altashadow-xs w-2/3 rounded-full backdrop-blur-lg h-12 px-4 py-2 justify-between items-center flex flex-row overflow-hidden">
         <div class="w-full h-full absolute top-0 z-10 bg-gradient-to-r from-black to-transparent left-0 opacity-90 dark:hidden"/>
         
-        <div class="h-8 flex z-20 w-14">
+        <div class="h-6 w-8 sm:h-8 flex z-20 sm:w-12">
             <a href="/#hero">
                 <img src="/logo.png" alt="logo">
             </a>

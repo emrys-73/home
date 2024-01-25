@@ -93,7 +93,7 @@
 
                         <br><br>
 
-                        Check out the <b class="font-semibold text-white">apps we are building <a href="astralta.com" class="{$animate} text-[#7EFF6D] font-semibold opacity-80 hover:opacity-100">here</a></b>.
+                        Check out the <b class="font-semibold text-white">apps we are building <a href="https://www.astralta.com/" class="{$animate} text-[#7EFF6D] font-semibold opacity-80 hover:opacity-100">here</a></b>.
                     </span>
                 </div>
 
