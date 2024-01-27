@@ -76,7 +76,7 @@
                     <br>
                     <br>
 
-                    I’m based in <b class="font-semibold text-white">Munich, Germany</b> and with our software company <a href="https://www.astralta.com/" class="{$animate} opacity-80 hover:opacity-100 text-[#7EFF6D] font-semibold">Astralta</a> we’ve <b class="font-semibold text-white">deployed 20+ software products</b> with great focus on efficiency, user-friendly interfaces and brand identity.
+                    I’m based in <b class="font-semibold text-white">Munich, Germany</b> and with our company <a href="https://www.astralta.com/" class="{$animate} opacity-80 hover:opacity-100 text-[#7EFF6D] font-semibold">Astralta</a> we’ve <b class="font-semibold text-white">deployed 20+ software products</b> with big focus on efficiency, user-friendly interfaces and brand identity.
                 </div>
             </div>
 
@@ -93,7 +93,7 @@
 
                         <br><br>
 
-                        Check out the <b class="font-semibold text-white">apps we are building <a href="https://www.astralta.com/" class="{$animate} text-[#7EFF6D] font-semibold opacity-80 hover:opacity-100">here</a></b>.
+                        Check out <b class="font-semibold text-white">what we are building <a href="https://www.astralta.com/" class="{$animate} text-[#7EFF6D] font-semibold opacity-80 hover:opacity-100">here</a></b>.
                     </span>
                 </div>
 
