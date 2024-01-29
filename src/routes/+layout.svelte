@@ -34,7 +34,7 @@
 <div class="w-full h-full absolute top-0 z-0">
     <img src="/top.png" alt="top" class="w-full absolute ">
 </div>
-<div class=" w-full h-20 flex px-4 justify-center items-center fixed top-2 z-50">
+<div class=" w-full h-20 flex px-4 justify-center items-center top-2 z-50 relative">
     <div class="text-white dark:bg-white bg-opacity-10 dark:bg-opacity-10 altashadow-xs w-2/3 rounded-full backdrop-blur-lg h-12 px-4 py-2 justify-between items-center flex flex-row overflow-hidden">
         <div class="w-full h-full absolute top-0 z-10 bg-gradient-to-r from-black to-transparent left-0 opacity-90 dark:hidden"/>
         

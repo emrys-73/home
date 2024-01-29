@@ -194,7 +194,7 @@
 
             <div class="px-4 py-4 opacity-55 text-md w-full h-full">
                 <p class="text-lg md:text-2xl font-bold">
-                    I'd love to talk with you personally. Until then, feel free to talk to my assistant.
+                    I'd love to personally talk to you. But until then, feel free to talk to my assistant.
                 </p>
             </div>
             
