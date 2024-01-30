@@ -67,6 +67,22 @@
     --ring: 240 4.9% 83.9%;
   }
 }
+
+@keyframes breathe {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.breathe {
+  animation: breathe 3s infinite;
+}
  
 @layer base {
   * {

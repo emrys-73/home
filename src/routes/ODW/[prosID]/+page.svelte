@@ -32,6 +32,8 @@
         }
     }
 
+    let paymentUrl = "https://buy.stripe.com/3cs2bF6MNeaR3ug8wE"
+
 
     export let data;
 
@@ -39,7 +41,7 @@
 
 {#if loaded}
 
-<div transition:scale={{ delay: 0, duration: 700 }} class="w-full h-full flex flex-col justify-center items-center z-50 relative">
+<div transition:scale={{ delay: 0, duration: 700 }} class="w-full h-full flex flex-col justify-center items-center z-40 relative">
     <div class="w-3/4 h-full pt-60 flex justify-center items-center flex-col gap-6">
         <h1 class="w-full h-full text-6xl flex items-center justify-center font-bold">
             Hey {data?.user?.username}!
@@ -49,10 +51,10 @@
         </p>
 
         <div class="p-6 bg-white bg-opacity-5 px-8 my-10 rounded-2xl">
-            <p class="text-center">
-                If you are here it means I handpicked you for I believe your work should be supported and seen by waaay more people. 
-                <br>
-                Therefore I built this for you and I'm certain we'll be able to build greater things together soon.
+            <p class="text-center text-[#989898]">
+                If you are here it means <b class="text-white font-normal">I handpicked you</b> for our latest secret project because I believe <b class="text-white font-normal">your work should be supported</b> and seen by waaay more people. 
+                <br><br>
+                Therefore I built this <b class="text-white font-normal">personal website for you</b> that you can keep <b class="text-white font-normal">for just $1 a month</b>.
             </p>
             
         </div>
@@ -78,26 +80,131 @@
 
         </div>
 
-        <Button href={url} class="{$animate} w-1/2 hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full mt-4">
+
+
+        <Button href={url} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full mt-4">
             Go to my site
         </Button>
+
+        <Button href={paymentUrl} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 breathe p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
+            Buy my site for 1$
+        </Button>
         
-        <Button href={url} class="{$animate} w-1/2 hover:w-3/4 p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
+        <Button href="mailto:montoya@astralta.com" class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
             Contact
         </Button>
     </div>
 
-    <div class="lg:w-3/4 w-full flex py-40 flex-col justify-center items-center relative">
-        <h2 class="text-4xl font-bold py-20">
+    <div class="lg:w-3/4 w-full flex py-40 flex-col justify-center items-center relative ">
+        <h2 class="text-4xl font-bold py-20 text-center px-4">
             Here is a look at your website
         </h2>
         <div class="w-full h-full flex justify-center items-center">
-            <iframe title="your Site" src={url} frameborder="0" class="w-3/4 h-full rounded-3xl min-h-[90vh]"></iframe>
+            <iframe title="your Site" src={url} frameborder="0" class="lg;w-3/4 px-4 w-full h-full rounded-3xl min-h-[90vh]"></iframe>
         </div>
 
         <Button href={url} class="{$animate} w-1/2 hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full my-8">
             Go to my site
         </Button>
+
+
+        <div class="w-full h-full flex justify-center items-center flex-col py-40 px-4">
+            <h2 class="text-4xl font-bold py-6 text-center">
+                Why One Dollar Website?
+            </h2>
+
+            <div class="p-6 bg-white bg-opacity-5 px-8 my-10 rounded-2xl">
+                <p class="text-center text-[#989898]">
+                    Today <b class="text-white font-normal">free personal website builders suck</b> and spam you with their branding. Furthermore, <b class="text-white font-normal">paid solutions are way too expensive</b> for what they offer. 
+
+                    <br><br>
+                    Nonethless having a personal website <b class="text-white font-normal">it's a game changer</b>. It increases credibility and steps-up your online presence game. It's <b class="text-white font-normal">truly a no-brainer</b> if you want to do anything online.
+
+                    <br>
+                    <br>
+
+                    Therefore, I made it possible to have a <b class="text-white font-normal">powerfull</b>, <b class="text-white font-normal">clean</b> and <b class="text-white font-normal">beautiful personal website</b> for as little as <b class="text-white font-normal">$1 a month</b>. 
+
+                    <br>
+                    <br>
+
+                    <span class="py-2 text-center text-white ">
+                        <ul class="flex flex-col gap-2 tracking-wider">
+                            <li>
+                                ✅ No hidden costs
+                            </li>
+                            <li>
+                                ✅ No hosting costs
+                            </li>
+                            <li>
+                                ✅ Flexible customisation
+                            </li>
+                            <li>
+                                ✅ Premium customer support
+                            </li>
+                        </ul>
+                    </span>
+
+                    <br>
+
+                    For 98% of the cases, this is more than enough to already <b class="text-white font-normal">land more clients and step up your game</b>. And if you want to <b class="text-white font-normal">upgrade</b> to something even more professional, me and my software company - Astralta - are at your service to guide you and bring you <b class="text-white font-normal">outstanding results with premium experience</b>.
+                    </p>
+
+                    
+
+                     
+            </div>
+
+        </div>
+
+        <div class="w-full h-full flex justify-center items-center flex-col py-40 px-4">
+            <h2 class="text-4xl font-bold py-6">
+                Want more?
+            </h2>
+
+            <div class="p-6 bg-white bg-opacity-5 px-8 my-10 rounded-2xl">
+                <p class="text-center text-[#989898]">
+                    
+                    This is just the beginning. <b class="text-white font-normal">There's so much more</b> we can do, such as
+                    </p>
+
+                        <ul class="py-6 text-[#989898] space-y-4 ">
+                            <li>
+                                - Building a <b class="text-white font-normal">personal AI assistant</b> inside your website 
+                            </li>
+                            <li>
+                                - Add <b class="text-white font-normal">more sites</b> and <b class="text-white font-normal">sections</b>
+                            </li>
+                            <li>
+                                - Get a the <b class="text-white font-normal">Full Pro Version</b> of your Personal Website with <b class="text-white font-normal">custom branding</b> and <b class="text-white font-normal">optimisation</b>
+                            </li>
+                        </ul>
+
+                        <p class="text-[#989898]">
+                    
+                            For any of these or more, simply <a href="mailto:montoya@astralta.com" class="{$animate} text-[#7EFF6D] opacity-80 hover:opacity-100">reach out to me</a> and we'll get our hands onto it.
+                </p>
+                
+            </div>
+            <Button href={url} class="{$animate} w-1/2 hover:w-3/4 p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
+                Contact
+            </Button>
+
+        </div>
+
+
+        
+
+
+
+        {#if data?.user?.paying}
+        <div class="text-center flex opacity-40">
+
+            <p>
+                if you don't wish to buy the site, it will be automatically deleted latest one week after its creation.
+            </p>
+        </div>
+        {/if}
 
 
         <a href="mailto:montoya@astralta.com" class="absolute bottom-4">

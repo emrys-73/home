@@ -22,7 +22,7 @@
     
     
     {#if display}
-        <div transition:scale={{ delay: 0, duration: 700 }} class="w-full h-full items-center min-h-screen justify-center flex flex-col z-50 relative">
+    <div transition:scale={{ delay: 0, duration: 700 }} class="w-full h-full items-center min-h-screen justify-center flex flex-col z-40 relative pt-20 lg:pt-40">
             <div class="w-3/4 h-full flex justify-center items-center">
                 <h1 class="text-6xl font-bold py-16 pt-24 xl:py-10">
                     <!-- <b class=" font-extrabold bg-[7EFF6D] #box-shadow: 0px -23px 101px 0px rgba(0, 0, 0, 0.50) inset;] text-black">One Website</b> - One Dollar -->
