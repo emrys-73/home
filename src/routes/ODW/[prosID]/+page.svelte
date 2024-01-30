@@ -86,10 +86,12 @@
             Go to my site
         </Button>
 
+        {#if !data?.user?.paying}
         <Button href={paymentUrl} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 breathe p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
             Buy my site for 1$
         </Button>
         
+        {/if}
         <Button href="mailto:montoya@astralta.com" class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
             Contact
         </Button>
@@ -197,7 +199,7 @@
 
 
 
-        {#if data?.user?.paying}
+        {#if !data?.user?.paying}
         <div class="text-center flex opacity-40">
 
             <p>
