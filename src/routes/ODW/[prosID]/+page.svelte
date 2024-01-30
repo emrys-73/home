@@ -130,7 +130,7 @@
                     <br>
                     <br>
 
-                    <span class="py-2 text-center text-white ">
+                    <span class="py-2 text-center text-white flex w-full h-full justify-center items-center">
                         <ul class="flex flex-col gap-2 tracking-wider">
                             <li>
                                 ✅ No hidden costs
@@ -149,7 +149,11 @@
 
                     <br>
 
-                    For 98% of the cases, this is more than enough to already <b class="text-white font-normal">land more clients and step up your game</b>. And if you want to <b class="text-white font-normal">upgrade</b> to something even more professional, me and my software company - Astralta - are at your service to guide you and bring you <b class="text-white font-normal">outstanding results with premium experience</b>.
+                    <span class="text-center w-full flex items-center justify-center text-[#989898]">
+                        <p>
+                            For 98% of the cases, this is more than enough to already <b class="text-white font-normal">land more clients and step up your game</b>. And if you want to <b class="text-white font-normal">upgrade</b> to something even more professional, me and my software company - Astralta - are at your service to guide you and bring you <b class="text-white font-normal">outstanding results with premium experience</b>.
+                        </p>
+                    </span>
                     </p>
 
                     
