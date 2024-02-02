@@ -82,16 +82,19 @@
 
 
 
-        <Button href={url} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full mt-4">
-            Go to my site
-        </Button>
-
         {#if !data?.user?.paying}
-        <Button href={paymentUrl} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 breathe p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
-            Buy my site for 1$
-        </Button>
-        
+            <Button href={paymentUrl} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full mt-4">
+                Buy my site for 1$
+            </Button>
+            <Button href={url} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
+                Go to my site
+            </Button>
+            {:else }
+                <Button href={url} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full mt-4">
+                    Go to my site
+                </Button>
         {/if}
+        
         <Button href="mailto:montoya@astralta.com" class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
             Contact
         </Button>
@@ -158,11 +161,13 @@
                         </p>
                     </span>
                     </p>
-
                     
 
                      
             </div>
+            <Button href={paymentUrl} class="{$animate} w-3/4 hover:w-full sm:w-1/2 sm:hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full mt-4">
+                Buy my site for 1$
+            </Button>
 
         </div>
 
@@ -196,7 +201,7 @@
                 
             </div>
             <Button href={url} class="{$animate} w-1/2 hover:w-3/4 p-2 px-4 bg-transparent hover:text-black border-2 border-white border-opacity-20 text-white hover:bg-white rounded-full">
-                Contact
+                Get in touch
             </Button>
 
         </div>
@@ -216,7 +221,7 @@
         {/if}
 
         <p class="opacity-40">
-            *Your site allows you to send up to 100 messages to your AI Chatbot. Upgrade is possible.
+            *Your site allows you to send up to 100 messages to your AI Chatbot. Reach out to me to upgrade for more messages.
         </p>
 
 
