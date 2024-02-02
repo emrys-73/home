@@ -44,7 +44,7 @@
 <div transition:scale={{ delay: 0, duration: 700 }} class="w-full h-full flex flex-col justify-center items-center z-40 relative">
     <div class="w-3/4 h-full pt-60 flex justify-center items-center flex-col gap-6">
         <h1 class="w-full h-full text-6xl flex items-center justify-center font-bold">
-            Hey {data?.user?.username}!
+            Hey {data?.user?.name}!
         </h1>
         <p>
             Great to have you here.
