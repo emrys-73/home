@@ -125,13 +125,16 @@
                     <br>
                     <br>
 
-                    Therefore, I made it possible to have a <b class="text-white font-normal">powerfull</b>, <b class="text-white font-normal">clean</b> and <b class="text-white font-normal">beautiful personal website</b> for as little as <b class="text-white font-normal">$1 a month</b>. 
+                    Therefore, we made it possible to have a <b class="text-white font-normal">powerfull</b>, <b class="text-white font-normal">clean</b> and <b class="text-white font-normal">beautiful personal website</b> for as little as <b class="text-white font-normal">$1 a month</b>. 
 
                     <br>
                     <br>
 
                     <span class="py-2 text-center text-white flex w-full h-full justify-center items-center">
                         <ul class="flex flex-col gap-2 tracking-wider">
+                            <li>
+                                ✅ Custom AI Assistant 
+                            </li>
                             <li>
                                 ✅ No hidden costs
                             </li>
@@ -176,7 +179,7 @@
 
                         <ul class="py-6 text-[#989898] space-y-4 ">
                             <li>
-                                - Building a <b class="text-white font-normal">personal AI assistant</b> inside your website 
+                                - <b class="text-white font-normal">More messages</b> with your <b class="text-white font-normal">personal AI assistant</b> inside your website 
                             </li>
                             <li>
                                 - Add <b class="text-white font-normal">more sites</b> and <b class="text-white font-normal">sections</b>
@@ -211,6 +214,10 @@
             </p>
         </div>
         {/if}
+
+        <p class="opacity-40">
+            *Your site allows you to send up to 100 messages to your AI Chatbot. Upgrade is possible.
+        </p>
 
 
         <a href="mailto:montoya@astralta.com" class="absolute bottom-4">
