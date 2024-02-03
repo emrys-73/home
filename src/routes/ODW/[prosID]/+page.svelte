@@ -12,8 +12,13 @@
     let url;
     $: url = ""
 
+    let aiUrl;
+    $: aiUrl = ""
+
     onMount(() => {
         url = `${$landmakerUrl}/${data?.user?.username}`
+        aiUrl = `https://ai.astralta.com/${data?.user?.username}`
+        
         loaded = true;
     })
 
@@ -33,7 +38,6 @@
     }
 
     let paymentUrl = "https://buy.stripe.com/3cs2bF6MNeaR3ug8wE"
-
 
     export let data;
 
@@ -112,6 +116,17 @@
             Go to my site
         </Button>
 
+        <h2 class="text-4xl font-bold py-20 text-center px-4">
+            And this is your personal AI assistant
+        </h2>
+
+        <div class="w-1/2 h-full flex justify-center items-center">
+            <iframe title="your Site" src={aiUrl} frameborder="0" class="lg;w-3/4 w-full h-full rounded-3xl min-h-[90vh]"></iframe>
+        </div>
+
+        <Button href={aiUrl} class="{$animate} w-1/2 hover:w-3/4 p-2 px-4 bg-[#7EFF6D] font-bold text-black hover:bg-white rounded-full my-8">
+            Talk to my AI
+        </Button>
 
         <div class="w-full h-full flex justify-center items-center flex-col py-40 px-4">
             <h2 class="text-4xl font-bold py-6 text-center">
