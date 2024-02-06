@@ -18,12 +18,13 @@
     onMount(() => {
         show = true;
     })
-    
+     
+    // I build custom software focused on AI, brand-identity and outstanding performance.
 
     const plugin = Autoplay({ delay: 2000, stopOnInteraction: true });
 
     const { messages, handleSubmit, input } = useChat({
-		initialMessages: [{"role": "system", "content": "You are Adrian's personal AI assistant and you live inside his webpage. Your name is MONDAI which stands for Mainly One New Dynamic Artificial intelligence. Your goal is to clear any questions anyone might have about Adrian and you will only talk about him. If you don't know something you will encourage them to contact Adrian personally. Here is your knowledge base on Adrian: Identity: Adrian, male, Lima, Peru. Childhood Goals: Exploration, overcoming resource limits. Skills: Multilingual (German, English, Spanish, French, Romanian), musical talent (10 instruments), graphic design, photography. Academics: National Mathematics Olympiads (2nd place, age 11), Humboldt School scholarship. Early Ventures: Online sales (translations, graphic designs), wedding photography. Business Experience: Dropshipping store (age 16), various entrepreneurial projects. Volunteering: House-building for needy, raised $10,000. Passions: Psychology, science, engineering. Research: Algorithmic thinking in education. Higher Education: Computer Science, Technical University of Munich. Teaching: Tutor, lecturer in discrete structures. Authorship: Book on probability theory. Professional Roles: PLC Engineer (TUM Hyperloop), Software Consultant (Horyzn aerospace), Software Developer (.NET, Isar Aerospace), diverse tasks including market analysis, B2B negotiations, and interface design. Programming Skills: Python, Java, C#, C++, C, Haskell, OCaml. Design Work: Logos for Isar Aerospace. Religious Affiliation: Christian. Church Contribution: Software for song management, website development, social media marketing. AI Ventures: AI-enhanced tools development, custom-trained AI chatbots, partnership with Mino Lee, founder of Astralta (Studio PRO, Astralta Infinity). Startup Involvement: TUM.AI Startup Accelerator, co-founder of Aivery. Ongoing Projects: AI software development, Chrome Extension for LaTeX, Bible verse website. Personal Life: Single, enjoys music, singing, gym, sports, passionate learner and inventor."}],
+		initialMessages: [{"role": "system", "content": "You are Adrian's personal AI assistant and you live inside his personal webpage. Your name is MONDAI which stands for Mainly One New Dynamic Artificial intelligence but you will only tell your name if the user explicitely asks you about it. Your goal is to clear any questions anyone might have about Adrian and you will only talk about him. If you don't know something you will encourage them to contact Adrian personally. Here is your knowledge base on Adrian: Identity: Adrian, male, Lima, Peru. Childhood Goals: Exploration, overcoming resource limits. Skills: Multilingual (German, English, Spanish, French, Romanian), musical talent (10 instruments), graphic design, photography. Academics: National Mathematics Olympiads (2nd place, age 11), Humboldt School scholarship. Early Ventures: Online sales (translations, graphic designs), wedding photography. Business Experience: Dropshipping store (age 16), various entrepreneurial projects, freelancing in graphic design, photography, cinematogrpahy and software development since he was 13 years old. Volunteering: House-building for needy, raised $10,000. Passions: Psychology, science, engineering, mathematics, AI, theology. Research: Algorithmic thinking in education. Higher Education: Computer Science, Technical University of Munich. Teaching: Tutor, lecturer in discrete structures. Authorship: Book on probability theory. Professional Roles: PLC Engineer (TUM Hyperloop), Software Consultant (Horyzn aerospace), Software Developer (.NET, Isar Aerospace), diverse tasks including market analysis, B2B negotiations, and interface design. Programming Skills: Python, Java, C#, C++, C, Haskell, OCaml. Design Work: Logos for Isar Aerospace. Religious Affiliation: Christian. Church Contribution: Software for song management, website development, social media marketing. AI Ventures: AI-enhanced tools development, custom-trained AI chatbots, partnership with Mino Lee, founder of Astralta - premium software company focused on solving unique challenges through AI-Powered software with emphasis on excellence in performance, user-friendliness and brand identity. Startup Involvement: TUM.AI Startup Accelerator, co-founder of Aivery. Adrian is part of the EWOR Pre-Idea fellowship. Adrian is an EWOR Fellow. EWOR is a place where the most extraordinary people find the education, network, and capital to solve the world’s biggest problems. Personal Life: Single, enjoys music, singing, gym, sports, christian, active at church, passionate learner and inventor."}],
         onFinish: () => {
             storeMessage($messages[$messages.length - 2].content, $messages[$messages.length - 1].content)
         }
@@ -41,6 +42,25 @@
             const result = await response.json()
         }
 
+    const tags = [
+        {
+            title: "Founder",
+            url: '/#about'
+        },
+        {
+            title: "Computer Scientist",
+            url: '/#about'
+        },
+        {
+            title: "EWOR Fellow",
+            url: 'https://ewor.io/'
+        },
+        {
+            title: "Author",
+            url: '/free'
+        },
+    ]
+
 </script>
 
 {#if show}
@@ -50,9 +70,18 @@
 
             <div class="flex md:flex-row flex-col w-full justify-center items-center z-10">
                 <div class="justify-center items-center lg:w-3/5 w-full px-4 sm:px-10">
-                    <h1 class=" text-6xl xl:text-7xl font-bold pt-12 md:pt-0">
-                        <b class="bg-[#7EFF6D] text-black">I build software</b> that makes my mama proud
+                    <h1 class=" text-4xl xl:text-5xl font-bold pt-12 md:pt-0">
+                        <b class="bg-[#7EFF6D] text-black">I build software</b> for outstanding performance, beautifully.
                     </h1>
+                    <div class="w-full h-12 flex flex-row gap-2 items-center justify-start py-10 sm:py-4 flex-wrap gap-y-4 mb-10 sm:mb-20">
+                        {#each tags as t}
+                            <a href={t.url} class="{$animate} bg-white bg-opacity-10 rounded-full px-5 py-1 opacity-70 hover:opacity-100 hover:cursor-pointer">
+                                <span class="shrink-0 whitespace-nowrap">
+                                    {t.title}
+                                </span>
+                            </a>
+                        {/each}
+                    </div>
                 </div>
                 <div class=" md:w-2/5 justify-end">
                     <img src="/herome.png" alt="hero" class=" scale-75 md:scale-105 ">
@@ -62,7 +91,7 @@
             <div class="rounded-2xl bg-white bg-opacity-5 py-8 backdrop-blur-xl -mt-16 md:-mt-2 lg:-mt-4 px-10 mx-6 font-light tracking-wide z-20">
                 Hey!
                 <br><br>
-                I'm super glad you're here. It very likely means we could build great projects together - so I'll be waiting for you to <b class="{$animate} text-[#7EFF6D] hover:opacity-100 opacity-90 hover:font-bold"><a href="mailto:montoya@astralta.com">hit me up</a></b>!
+                I'm glad you're here. It very likely means we could build great projects together - so I'll be waiting for you to <b class="{$animate} text-[#7EFF6D] hover:opacity-100 opacity-90 hover:font-bold"><a href="mailto:montoya@astralta.com">hit me up</a></b> to get us started.
 
                 <br>
                 <br>
@@ -102,7 +131,7 @@
                         <br>
                         <br>
 
-                        I’m based in <b class="font-semibold text-white">Munich, Germany</b> and with our company <a href="https://www.astralta.com/" class="{$animate} opacity-80 hover:opacity-100 text-[#7EFF6D] font-semibold">Astralta</a> we’ve <b class="font-semibold text-white">deployed 20+ software products</b> with big focus on efficiency, user-friendly interfaces and brand identity.
+                        I’m based in <b class="font-semibold text-white">Munich, Germany</b> and with our company <a href="https://www.astralta.com/" class="{$animate} opacity-80 hover:opacity-100 text-[#7EFF6D] font-semibold">Astralta</a> we’ve <b class="font-semibold text-white">deployed 20+ premium software projects</b> with a strong emphasis on excellence in performance, user-friendliness, and brand identity.
                     </div>
                 </div>
 
@@ -115,7 +144,8 @@
                         </h3>
 
                         <span class="text-[#989898] font-semibold tracking-wider text-xl">
-                            We solve <b class="font-semibold text-white">unique challenges</b> through cutting-edge <b class="font-semibold text-white">AI-Powered Software</b> with <b class="font-semibold text-white">100% satisfaction guarantee</b>.
+                            <!-- We offer a <b class="font-semibold text-white">rent-a-brain service</b> with the goal of <b class="font-semibold text-white">solving unique challenges</b> through <b class="font-semibold text-white">AI-Powered Software</b>. -->
+                            We offer a premium <b class="font-semibold text-white"> rent-a-brain service</b> with the goal of solving unique challenges through <b class="font-semibold text-white">AI-Powered Software</b>.
 
                             <br><br>
 
@@ -160,9 +190,9 @@
                 </a>
             </div>
             
-            <div class="flex lg:flex-row flex-col w-full h-full justify-center items-center">
-                <a href="https://developers.google.com/community/gdsc">
-                    <img class="{$animate} hover:scale-90 scale-75" src="/logos/me_google.png" alt="GDSC">
+            <div class="flex lg:flex-row flex-col w-full h-full justify-center items-center -mt-4">
+                <a href="https://ewor.io/">
+                    <img class="{$animate} w-40 hover:w-52" src="/logos/me_ewor.png" alt="EWOR">
                 </a>
             </div>
 
@@ -294,7 +324,7 @@
                     <Button href="mailto:montoya@astralta.com" class="{$animate} z-20 backdrop-blur-lg altashadow-xs py-6 w-4/5 hover:w-full rounded-full bg-transparent border-2 border-opacity-10 border-white text-white hover:text-black">
                         Get in touch
                     </Button>
-                    <Button href="mailto:montoya@astralta.com" class="{$animate} hover:z-50 z-20 sm:z-10 altashadow-xs font-bold py-6 w-4/5 hover:w-full rounded-full bg-[#7EFF6D] hover:bg-[#7EFF6D] backdrop-blur-lg border-2 border-opacity-10 border-white text-black ">
+                    <Button href="mailto:montoya@astralta.com" class="{$animate} altashadow-xl hover:z-50 z-20 sm:z-10 altashadow-xs font-bold py-6 w-4/5 hover:w-full rounded-full bg-[#7EFF6D] hover:bg-[#7EFF6D] backdrop-blur-lg border-2 border-opacity-10 border-white text-black ">
                         Get in touch (in green)
                     </Button>
 
@@ -304,7 +334,7 @@
 
                 <div class="absolute flex bottom-0 right-2 w-1/2 lg:h-1/2">
                     <img src="/callme.png" alt="callme" class="z-40">
-                </div>
+                </div> 
 
                 
                     <div class="absolute z-50 backdrop-blur-lg py-3 bottom-0 text-[8pt] md:text-sm bg-white bg-opacity-5 flex w-full text-center justify-center items-center altashadow-xs">
