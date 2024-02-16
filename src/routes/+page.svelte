@@ -64,7 +64,7 @@
 </script>
 
 {#if show}
-    <div transition:scale={{ delay: 0, duration: 700 }}  id="hero" class="w-full h-full flex min-h-screen flex-col justify-center items-center pt-20 sm:pt-32 md:pt-40">
+    <div transition:scale={{ delay: 0, duration: 700 }}  id="hero" class="w-full h-full flex min-h-screen flex-col justify-center items-center pt-20 sm:pt-32 md:pt-40 text-white">
         <!-- Hero -->
         <div  class="lg:w-3/4 w-full h-full flex flex-col py-12 px-4">
 
