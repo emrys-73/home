@@ -25,6 +25,11 @@
             url: "/#contact",
             active: true,
         },
+        {
+            title: "Free Stuff",
+            url: "/free",
+            active: true,
+        },
     ]
 
 </script>

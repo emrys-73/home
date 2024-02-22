@@ -55,10 +55,10 @@
             title: "EWOR Fellow",
             url: 'https://ewor.io/'
         },
-        {
-            title: "Author",
-            url: '/free'
-        },
+        // {
+        //     title: "Author",
+        //     url: '/free'
+        // },
     ]
 
 </script>
@@ -102,11 +102,11 @@
             </div>
 
             <div class="w-full py-12 sm:py-8 px-10 justify-center items-center flex flex-col-reverse sm:flex-row gap-4 z-30">
-                <Button href="/#ai" class="{$animate} altashadow py-6 w-4/5 hover:w-full rounded-full bg-transparent border-2 border-opacity-10 border-white text-white hover:text-black">
+                <Button href="/#ai" class="{$animate} hover:bg-white altashadow py-6 w-4/5 hover:w-full rounded-full bg-transparent border-2 border-opacity-10 border-white text-white hover:text-black">
                     Talk to my assistant
                 </Button>
 
-                <Button href="mailto:montoya@astralta.com" class="{$animate} altashadow font-bold py-6 w-4/5 hover:w-full rounded-full bg-[#7EFF6D] border-2 border-opacity-10 border-white text-black ">
+                <Button href="mailto:montoya@astralta.com" class="{$animate} hover:bg-white altashadow font-bold py-6 w-4/5 hover:w-full rounded-full bg-[#7EFF6D] border-2 border-opacity-10 border-white text-black ">
                     Talk to me
                 </Button>
             </div>
@@ -321,7 +321,7 @@
 
 
                     </div>
-                    <Button href="mailto:montoya@astralta.com" class="{$animate} z-20 backdrop-blur-lg altashadow-xs py-6 w-4/5 hover:w-full rounded-full bg-transparent border-2 border-opacity-10 border-white text-white hover:text-black">
+                    <Button href="mailto:montoya@astralta.com" class="{$animate} hover:bg-white z-20 backdrop-blur-lg altashadow-xs py-6 w-4/5 hover:w-full rounded-full bg-transparent border-2 border-opacity-10 border-white text-white hover:text-black">
                         Get in touch
                     </Button>
                     <Button href="mailto:montoya@astralta.com" class="{$animate} altashadow-xl hover:z-50 z-20 sm:z-10 altashadow-xs font-bold py-6 w-4/5 hover:w-full rounded-full bg-[#7EFF6D] hover:bg-[#7EFF6D] backdrop-blur-lg border-2 border-opacity-10 border-white text-black ">
